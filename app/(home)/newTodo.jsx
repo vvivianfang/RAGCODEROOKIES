@@ -55,7 +55,7 @@ export default function NewTodo() {
     }
 
     return <View style={styles.container}>
-          <Text style={styles.name}>Name of item: </Text>
+          <Text style={styles.name}>Name and price of item: </Text>
           <TextInput value={title} onChangeText={setTitle} />
           {errMsg !== '' && <Text>{errMsg}</Text>}
           <Button onPress={handleAddImage} style={styles.button2}>Add Image</Button>
